@@ -1,0 +1,77 @@
+@import "./colors";
+
+.pokemon-left {
+    position: absolute;
+    color: #0f0e17;
+    font-size: 10vw;
+    bottom: -215px;
+    left: 6px;
+    transform: rotate(327deg);
+}
+
+.pokemon-right {
+    position: absolute;
+    color: #0f0e17;
+    font-size: 9vw;
+    bottom: -378px;
+    right: 34px;
+    transform: rotate(20deg);
+}
+
+.info-container {
+    margin-inline: auto;
+    width: 60%;
+    margin-top: 15vh;
+    height: 60vh;
+    background-color: $main-color;
+
+    .info-container-title {
+        padding-top: 2rem;
+        font-size: 6vw;
+        text-align: center;
+        color: $secondary-color;
+    }
+    .info-container-text {
+        color: #fffffe;
+        width: 50%;
+        margin: 3rem 0 0 25%;
+        font-size: 4vw;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 576px) {
+    .info-container {
+        .info-container-text {
+            font-size: 3.5vw;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .info-container {
+        .info-container-text {
+            font-size: 3vw;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .pokemon-left {
+        bottom: -314px;
+    }
+    .info-container {
+        .info-container-text {
+            font-size: 2.5vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .pokemon-left {
+        bottom: -414px;
+    }
+    .info-container {
+        .info-container-text {
+            font-size: 1.9vw;
+        }
+    }
+}

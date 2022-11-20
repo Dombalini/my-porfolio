@@ -1,0 +1,20 @@
+@import "./colors";
+@import "./button";
+
+.header-container {
+    height: 9vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fffffe;
+    justify-content: space-around;
+    align-content: space-between;
+
+    .header-nav {
+        text-decoration: none;
+        @include button;
+        font-size: 1.3rem;
+    }
+    .header-nav:hover {
+        @include hover;
+    }
+}

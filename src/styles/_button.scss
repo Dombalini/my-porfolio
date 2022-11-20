@@ -1,0 +1,18 @@
+@mixin button {
+    text-align: center;
+    background: none;
+    padding: 8px 10px 12px 10px;
+    border-radius: 20px;
+    color: $main-color;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 2px solid $main-color;
+    margin-top: 1rem;
+}
+
+@mixin hover {
+    transform: scale(120%);
+    transition: 0.5s ease-in-out;
+    color: $button-color;
+    background: $main-color;
+}

@@ -1,0 +1,191 @@
+@import "./colors";
+@import "./button";
+
+.container {
+    background-color: $main-color;
+    height: 91vh;
+    .container-title {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 4vw;
+        color: $secondary-color;
+        .orange {
+            color: $button-color;
+        }
+    }
+    .main-container {
+        display: flex;
+        height: 80%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        color: $secondary-color;
+        .main-container-left {
+            width: 50%;
+            font-size: 1.2vw;
+            text-align: center;
+            padding: 3rem;
+            .orange-main {
+                color: $button-color;
+            }
+        }
+        .main-container-right {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            padding: 3vw;
+            text-align: center;
+
+            .cards {
+                width: 50%;
+                padding: 1rem;
+                .card-title {
+                    font-size: 1.3vw;
+                    font-weight: bold;
+                }
+                .card-icon {
+                    font-size: 6vw;
+                }
+                .card-text {
+                    font-size: 1vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        .main-container {
+            flex-direction: column;
+            .main-container-left {
+                width: 80%;
+                font-size: 1.5vw;
+            }
+            .main-container-right {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 3vw;
+                text-align: center;
+
+                .cards {
+                    width: 20%;
+                    padding: 1rem;
+                    .card-title {
+                        font-size: 1.5vw;
+                        font-weight: bold;
+                    }
+                    .card-icon {
+                        font-size: 6vw;
+                    }
+                    .card-text {
+                        font-size: 1.4vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        .main-container {
+            .main-container-left {
+                width: 80%;
+                font-size: 1.8vw;
+                padding-bottom: 1rem;
+            }
+            .main-container-right {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 3vw;
+                text-align: center;
+
+                .cards {
+                    width: 20%;
+                    padding: 1rem;
+                    .card-title {
+                        font-size: 1.8vw;
+                        font-weight: bold;
+                    }
+                    .card-icon {
+                        font-size: 6vw;
+                    }
+                    .card-text {
+                        font-size: 1.7vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        .main-container {
+            .main-container-left {
+                width: 80%;
+                font-size: 2.1vw;
+                padding-bottom: 1rem;
+            }
+            .main-container-right {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 3vw;
+                text-align: center;
+
+                .cards {
+                    width: 20%;
+                    padding: 1rem;
+                    .card-title {
+                        font-size: 2.1vw;
+                        font-weight: bold;
+                    }
+                    .card-icon {
+                        font-size: 6vw;
+                    }
+                    .card-text {
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        .main-container {
+            .main-container-left {
+                width: 80%;
+                font-size: 2.4vw;
+                padding-bottom: 1rem;
+            }
+            .main-container-right {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 3vw;
+                text-align: center;
+
+                .cards {
+                    width: 30%;
+                    padding: 1rem;
+                    .card-title {
+                        font-size: 2.4vw;
+                        font-weight: bold;
+                    }
+                    .card-icon {
+                        font-size: 6vw;
+                    }
+                    .card-text {
+                        font-size: 2.2vw;
+                    }
+                }
+            }
+        }
+    }
+}

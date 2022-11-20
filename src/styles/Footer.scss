@@ -1,0 +1,85 @@
+@import "./colors";
+@import "./button";
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-inline: auto;
+    margin-top: 5vh;
+    height: 50vh;
+    background-color: $main-color;
+
+    .footer-left {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border: 3px solid $paragraph-color;
+        font-weight: bold;
+        font-size: 3vw;
+        color: $paragraph-color;
+
+        a {
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            color: $paragraph-color;
+        }
+
+        a:hover {
+            transition: 0.5s ease-in-out;
+            color: $button-color;
+            background: $main-color;
+        }
+        .email {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .footer-right {
+        font-weight: bold;
+        font-size: 2.5vw;
+        color: $secondary-color;
+    }
+}
+.arrow-up {
+    text-align: center;
+    right: 40px;
+    bottom: 35px;
+    position: fixed;
+    color: $main-color;
+    font-size: 5vw;
+}
+
+.arrow-up:hover {
+    transition: 0.5s ease-in-out;
+    color: $button-color;
+    background: $main-color;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        .footer-left {
+            font-size: 1.5rem;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .footer-container {
+        padding: 1vw;
+        display: flex;
+        flex-direction: row;
+        .footer-right {
+            padding: 1vw;
+            text-align: center;
+        }
+    }
+}
